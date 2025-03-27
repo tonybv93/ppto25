@@ -1,0 +1,26 @@
+@import 'variables.scss';
+
+h1{
+    text-align: center;
+    padding-top: 10px;
+    font-size: 18px;
+}
+
+.table-header{
+    padding: 10px;
+    color: $grey6;
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    user-select: none;
+    justify-content: space-between;
+}
+.add-btn{
+    font-size: 16px;
+    color: $blue;
+}
+.close-btn{
+    font-size: 16px;
+    color: $red;
+}

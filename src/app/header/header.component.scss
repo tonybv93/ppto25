@@ -1,0 +1,11 @@
+@import 'variables.scss';
+
+header{
+    height: 55px;
+    background-color: $blue-dark;
+    line-height: 55px;
+    padding: 0 20px;
+    font-weight: 700;
+    color: white;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.123);
+}

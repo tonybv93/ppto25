@@ -1,0 +1,34 @@
+
+<div class="form">
+
+    <label for="category">Categoría</label> 
+    <div class="arrow-input">
+        <button> < </button>
+        <select id="category" [(ngModel)]="selectedCategory">
+            @for (c of categories; track $index) {
+                <option [value]="c.subcatogery">{{c.subcatogery}}</option>
+            }
+        </select>
+        <button> > </button>
+    </div>
+
+    <label for="fecha">Fecha</label>
+    <div class="arrow-input">
+        <button (click)="changeDate(-1)"> < </button>
+        <input id="fecha" type="date" [(ngModel)]="strDate">
+        <button (click)="changeDate(1)"> > </button>
+    </div>
+    
+    <label for="name">Consumo</label>
+    <input #name type="text" [(ngModel)]="label">    
+    
+    
+    <label for="amount">Monto</label>
+    <input id="amount" type="number"  [(ngModel)]="amount">
+
+    <div class="form-buttons">
+        <button (click)="addAndClose()" class="button btn-blue">Agregar y cerrar</button>
+        <button (click)="addAndNew()" class="button btn-turq">Agregar y continuar</button>
+    </div>
+
+</div>

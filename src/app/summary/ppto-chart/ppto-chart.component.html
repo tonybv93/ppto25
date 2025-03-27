@@ -1,0 +1,28 @@
+<div class="chat-container">
+    <div class="chart-marks">
+        @for (mark of verticalMarks; track $index) {
+            <p>{{mark }}</p>
+        }
+    </div>
+    <div class="chart" >
+        @for (item of measures; track $index) {
+            <app-chart-bar [measures]="item"></app-chart-bar>
+        }
+        <div class="lines-container">
+            @for (l of [1,2,3,4,5]; track $index) {
+                <div class="line"></div>
+            }
+        </div>
+     
+    </div>
+</div>
+<div style="display: flex; padding-left: 34px;">
+    <div class="chart-labels">
+        @for (item of data; track $index) {
+            <div [style.width]="labelWidtgh" class="label">
+                <b> {{item.label}} </b>
+                <div [class]=" item.used<item.max? 'label-used':'label-warning'">  S/ {{item.max -  item.used}}  </div>
+            </div>
+        }
+    </div>
+</div>

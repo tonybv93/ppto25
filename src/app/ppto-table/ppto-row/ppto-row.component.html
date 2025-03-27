@@ -1,0 +1,12 @@
+<div class="row">
+    <div class="row-icon"><img src="{{icon?.path??'TODO'}}" alt=""></div>
+    <div class="row-name">
+        <div>{{ data.name }}</div>
+        <div class="row-time">{{data.date | date: 'dd-MMM'}}</div>
+    </div>
+    <div class="row-money" [class.c-income]="data.amount>0"> {{data.amount | soles}} </div>
+    <div class="row-buttons">
+        <button class="btn-icon closecolor"><img src="assets/icons/close.svg" alt=""></button>
+        <button class="btn-icon udatecolor"><img src="assets/icons/udate.svg" alt=""></button>
+    </div>
+</div>

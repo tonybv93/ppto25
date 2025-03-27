@@ -1,0 +1,66 @@
+@import 'variables.scss';
+
+.row{
+    display: flex;
+    align-items: center;
+    padding: 4px;
+    border-bottom: solid 1px $grey2;
+    margin: 1px 0;
+    font-size: 14px;
+    &-icon{
+        //background-color: $blue;
+        padding: 5px;
+        border-radius: 50%;
+        margin-right: 10px;
+        & img {
+            width: 26px;
+            height: 26px;
+        }
+    }
+    &-name{
+        flex: 1;
+    }
+    &-time{
+        padding: 2px 0;
+        font-size: 13px;
+        color: $grey4;
+    }
+    &-money{
+        color: $red-dark;
+    }
+    &-buttons{
+        display: flex;
+        gap: 5px;
+        padding-left: 20px;
+    }
+}
+.btn-icon{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    & img{
+        width: 12px;
+        height: 12px;
+    }
+}
+.closecolor{
+    background-color: $red;
+    &:hover{
+        background-color: $red-dark; 
+    }
+}
+
+.udatecolor{
+    background-color: $turq;
+    &:hover{
+        background-color: $turq-dark; 
+    }
+}
+.c-income{
+    color: $green-dark;
+}

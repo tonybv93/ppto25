@@ -1,0 +1,32 @@
+@import 'variables.scss';
+
+.form{
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+    margin-bottom: 20px;
+    box-shadow: $shadow-lvl-1;
+}
+
+input, select{
+    padding: 5px;
+    border: solid 1px $grey3;
+    border-radius: 7px;
+    flex: 1 1;
+}
+label{
+    font-size: 15px;
+    margin-bottom: 4px;
+    margin-top: 10px;
+}
+.arrow-input{
+    gap: 10px;
+    display: flex;
+    width: 100%;
+}
+
+.form-buttons{
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}

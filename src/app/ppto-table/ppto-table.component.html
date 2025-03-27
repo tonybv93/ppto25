@@ -1,0 +1,8 @@
+
+@if (!loading) {
+    <div class="main-table">
+        @for (item of tableData; track item.id) {
+            <app-ppto-row [data]="item" ></app-ppto-row>
+        }
+    </div>
+}

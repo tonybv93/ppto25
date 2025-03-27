@@ -1,0 +1,22 @@
+@import 'variables.scss';
+
+.bar{
+    height: 100% ;
+    width: 30px;
+    &-fill{
+        background-color: $blue-dark;
+        width: 100%;
+    }
+    &-empty{
+        background-color: $blue-light;
+        width: 100%;
+    }
+    &-out{
+        background-color: $red;
+        width: 100%;        
+    }
+    &-nothing{
+        background-color: transparent;
+        width: 100%;
+    }
+}
